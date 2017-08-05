@@ -52,7 +52,7 @@ source_suffix = ['.rst', '.md']
 master_doc = 'index'
 
 # General information about the project.
-project = u'test-read-the-docs-sample'
+project = u'hypereal-doc'
 copyright = u'2017, yongzhoulu'
 author = u'yongzhoulu'
 
