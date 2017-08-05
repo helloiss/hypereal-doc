@@ -15,11 +15,3 @@ Welcome to hypereal sdk's documentation!
     bigData-sdk/index
     audio-sdk/index
 
-
-Indices and tables
-argh==0.26.2
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
