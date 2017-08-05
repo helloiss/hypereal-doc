@@ -10,8 +10,8 @@ Welcome to hypereal sdk's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-    pc-sdk/index
-    platform-sdk/index
-    bigData-sdk/index
-    audio-sdk/index
+   ../pc-sdk/index
+   ../platform-sdk/index
+   ../bigData-sdk/index
+   ../audio-sdk/index
 

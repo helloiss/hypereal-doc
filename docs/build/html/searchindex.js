@@ -1,1 +1,1 @@
-Search.setIndex({docnames:["index"],envversion:52,filenames:["index.rst"],objects:{},objnames:{},objtypes:{},terms:{argh:0,index:0,indic:0,modul:0,page:0,search:0,tabl:0},titles:["Welcome to hypereal sdk\u2019s documentation!"],titleterms:{document:0,hyper:0,sdk:0,welcom:0}})
+Search.setIndex({docnames:["index"],envversion:52,filenames:["index.rst"],objects:{},objnames:{},objtypes:{},terms:{argh:[],index:[],indic:[],modul:[],page:[],search:[],tabl:[]},titles:["Welcome to hypereal sdk\u2019s documentation!"],titleterms:{document:0,hyper:0,sdk:0,welcom:0}})
