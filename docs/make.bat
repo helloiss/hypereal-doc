@@ -9,7 +9,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=source
 set BUILDDIR=build
-set SPHINXPROJ=hypereal-doc
+set SPHINXPROJ=hyperealsdk
 
 if "%1" == "" goto help
 
