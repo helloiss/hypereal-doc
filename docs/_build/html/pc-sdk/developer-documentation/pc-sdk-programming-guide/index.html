@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>PC SDK Programming Guide &mdash; test-read-the-docs-sample 0.0.1 documentation</title>
+  <title>PC SDK Programming Guide &mdash; hypereal-doc 1.0 documentation</title>
   
 
   
@@ -35,10 +35,10 @@
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="test-read-the-docs-sample 0.0.1 documentation" href="../../../index.html"/>
+    <link rel="top" title="hypereal-doc 1.0 documentation" href="../../../index.html"/>
         <link rel="up" title="Welcome to the Developer Documentation." href="../index.html"/>
-        <link rel="next" title="Building with Hypereal VR SDK" href="Building with Hypereal VR SDK.html"/>
-        <link rel="prev" title="SDK Setup" href="../getting-started/PC SDK Setup.html"/> 
+        <link rel="next" title="Welcome to the Unity Platform Plugin Documentation." href="../unity-platform-plugin/index.html"/>
+        <link rel="prev" title="&lt;no title&gt;" href="../getting-started/index.html"/> 
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
@@ -57,7 +57,7 @@
           
 
           
-            <a href="../../../index.html" class="icon icon-home"> test-read-the-docs-sample
+            <a href="../../../index.html" class="icon icon-home"> hypereal-doc
           
 
           
@@ -67,7 +67,7 @@
             
             
               <div class="version">
-                0.0.1
+                1.0
               </div>
             
           
@@ -95,25 +95,13 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../../index.html">PC SDK</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Welcome to the Developer Documentation.</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../getting-started/HW Specification.html">Getting Started Guide</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../getting-started/PC SDK Setup.html">SDK Setup</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">PC SDK Programming Guide</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Building with Hypereal VR SDK.html">Building with Hypereal VR SDK</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Controller.html">Controller</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Device.html">Device</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Graphics Context.html">Graphics Context</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Introduction.html">Introduction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Queue Ahead.html">Queue Ahead</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Startup and Shutdown.html">Startup and Shutdown</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Utilities.html">Utilities</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">PC SDK Programming Guide</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../unity-platform-plugin/index.html">Welcome to the Unity Platform Plugin Documentation.</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../unity-plugin-user-guide/index.html">Welcome to the Unity Plugin User Guide.</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../unreal-platform-plugin/index.html">Unreal Platform Plugin User Guide.</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../unreal-plugin-user-guide/index.html">Welcome to Unreal Plugin User Guide.</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../key-mapping.html">Key Mapping</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../VRTK-plugin-programming-guide.html">VRTK Unity Plugin Programming Guide</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../developer-release-guide/index.html">Release Guide.</a></li>
@@ -137,7 +125,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">test-read-the-docs-sample</a>
+          <a href="../../../index.html">hypereal-doc</a>
         
       </nav>
 
@@ -194,48 +182,6 @@
 <h1>PC SDK Programming Guide<a class="headerlink" href="#pc-sdk-programming-guide" title="Permalink to this headline">¶</a></h1>
 <p>This section is designed to lay out all the necessary components that is required to create a game for Hypereal hardware platform.  In order to fully utilize all the Hypreal hardware features, we described in the guide how specific features and functionalities should be implemented with Hypreal PC SDK.</p>
 <div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Building with Hypereal VR SDK.html">Building with Hypereal VR SDK</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Building with Hypereal VR SDK.html#header-files">Header Files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Building with Hypereal VR SDK.html#libraries">Libraries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Building with Hypereal VR SDK.html#redistribution">Redistribution</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Controller.html">Controller</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Controller.html#input">Input</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Controller.html#haptic-feedback">Haptic Feedback</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Device.html">Device</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Device.html#sub-devices">Sub Devices</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Device.html#creation-and-release">Creation and Release</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Device.html#runtime-status">Runtime Status</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Device.html#properties">Properties</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Device.html#tracking">Tracking</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Device.html#without-tracking">Without Tracking</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Graphics Context.html">Graphics Context</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Graphics Context.html#creation-release-and-update">Creation, Release and Update</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Graphics Context.html#configure-rendering">Configure Rendering</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Graphics Context.html#rendering-loop">Rendering Loop</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Graphics Context.html#mirror-distorted-texture">Mirror/Distorted Texture</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Introduction.html#api-overview">API Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Introduction.html#coordinate-system">Coordinate System</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Queue Ahead.html">Queue Ahead</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Startup and Shutdown.html">Startup and Shutdown</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Utilities.html">Utilities</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Utilities.html#loading-helper">Loading Helper</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Utilities.html#view-layer">View Layer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Utilities.html#input-helper">Input Helper</a></li>
-</ul>
-</li>
-</ul>
 </div>
 </div>
 
@@ -249,10 +195,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Building with Hypereal VR SDK.html" class="btn btn-neutral float-right" title="Building with Hypereal VR SDK" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../unity-platform-plugin/index.html" class="btn btn-neutral float-right" title="Welcome to the Unity Platform Plugin Documentation." accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../getting-started/PC SDK Setup.html" class="btn btn-neutral" title="SDK Setup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../getting-started/index.html" class="btn btn-neutral" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -261,7 +207,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, yongzhoulu.
+        &copy; Copyright 2017, liliang.
 
     </p>
   </div>
@@ -283,7 +229,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../../',
-            VERSION:'0.0.1',
+            VERSION:'1.0',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
