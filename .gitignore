@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+/.idea/
+.gitignore
+.idea/hypereal-doc.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+docs/_static/
+docs/_templates/

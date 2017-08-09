@@ -1,0 +1,50 @@
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: dev
+  name: readthedocs
+  labels:
+    app: readthedocs
+    tier: backend
+spec:
+  type: NodePort
+  ports:
+  - port: 8000
+    nodePort: 30525
+  selector:
+    name: readthedocs
+    tier: backend
+
+---
+
+apiVersion: v1
+kind: Pod
+metadata:
+  namespace: dev
+  name: readthedocs
+  labels:
+    name: readthedocs
+    tier: backend
+spec:
+  containers:
+  - image: registry-corp.hypereal.com/public/readthedocs:latest
+    name: readthedocs
+    resources:
+      requests:
+        cpu: 0.5
+        memory: 2048Mi
+    env:
+    - name: PRODUCTION_DOMAIN
+      value: docs-dev.hypereal.com
+    volumeMounts:
+    - mountPath: /www
+      name: readthedocs-dev-pv
+    ports:
+    - containerPort: 8000
+  volumes:
+  - name: readthedocs-dev-pv
+    awsElasticBlockStore:
+      volumeID: vol-071e0b9b4503f2cd7
+      fsType: ext4
+  imagePullSecrets:
+    - name: appstore-backend-secret

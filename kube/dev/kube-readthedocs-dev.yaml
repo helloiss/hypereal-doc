@@ -13,20 +13,25 @@ spec:
     spec:
       containers:
       - name: readthedocs
-        image: suanmeiguo/readthedocs:latest
+        image: registry-corp.hypereal.com/public/readthedocs:v3
         resources:
           requests:
             cpu: 0.5
             memory: 2024Mi
         env:
-        - name: SPRING_PROFILES_ACTIVE
-          value: dev
+        - name: PRODUCTION_DOMAIN
+          value: docs-dev.hypereal.com
         ports:
-        # Jetty server
         - containerPort: 8000
-        # internal grpc server
+        volumeMounts:
+        - mountPath: /data
+          name: readthedocs-dev-volume
       imagePullSecrets:
         - name: appstore-backend-secret
+      volumes:
+      - name: readthedocs-dev-volume
+        persistentVolumeClaim:
+          claimName: readthedocs-dev-pvc
 
 ---
 
@@ -42,6 +47,7 @@ spec:
   type: NodePort
   ports:
   - port: 8000
+    nodePort: 30525
   selector:
     app: readthedocs
     tier: backend
