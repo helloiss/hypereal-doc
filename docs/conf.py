@@ -173,7 +173,5 @@ texinfo_documents = [
      'Miscellaneous'),
 ]
 
-PRODUCTION_DOMAIN="docs-test.hypereal.com"
-
 
 
